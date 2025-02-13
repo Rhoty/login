@@ -27,15 +27,14 @@
     max-width: 800px;
     margin: auto;
     position: relative;
+}
 
- }
-
- .caja_trasera {
+ .caja_trasera{
     width: 100%;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     background-color: rgba(0, 128, 255, 0.5);
  }
 
@@ -50,7 +49,7 @@
     margin-top: 30px;
  }
 
- .caja_trasera h3{
+ .caja_trasera div h3{
     font-weight: 400;
     font-size: 26px; 
  }
@@ -130,4 +129,34 @@
     display: none;
  }
 
- /* trabajando en el responsive design
+ /* Trabajando en el responsive design*/
+
+@media screen and (max-witdh: 768px){
+   main{
+      margin-top: 50px;
+   }
+    .caja_trasera{
+      max-width: 350px;
+      height: 300px;
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .caja_trasera div{
+      margin: 0px;
+      position: absolute;
+    }
+    
+    /* formulario */
+
+    .contenedor_login_register{
+      top: -10px;
+      left: -5px;
+      margin: auto;
+    }
+
+    .contenedor_login_register form{
+      position: relative;
+    }
+}
+
